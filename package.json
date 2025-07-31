@@ -1,0 +1,24 @@
+{
+  "name": "sitecomix",
+  "version": "1.0.0",
+  "description": "Site de quadrinhos com IA",
+  "main": "backend/script.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/script.js",
+    "build": "cd backend && npm install"
+  },
+  "keywords": ["quadrinhos", "ia", "nodejs"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.10.0",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 

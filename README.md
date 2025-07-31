@@ -1,20 +1,36 @@
 # Sitecomix
 
-Projeto de site de quadrinhos desenvolvido com HTML, CSS e JavaScript.
+Site de quadrinhos com integração de IA usando Google Gemini.
 
 ## Estrutura do Projeto
 
-- `frontend/` - Interface do usuário
-- `backend/` - Lógica do servidor
+- `backend/` - API Node.js com Express
+- `frontend/` - Interface web estática
 
-## Como executar
+## Deploy no Render
 
-1. Abra o arquivo `index.html` no navegador
-2. Para desenvolvimento, use um servidor local
+### Configuração
 
-## Tecnologias utilizadas
+1. **Variáveis de Ambiente**: Configure no painel do Render:
+   - `GOOGLE_API_KEY`: Sua chave da API do Google Gemini
 
-- HTML5
-- CSS3
-- JavaScript
-- Node.js (backend) 
+2. **Build Settings**:
+   - Build Command: `npm install`
+   - Start Command: `npm start`
+
+### Endpoints da API
+
+- `GET /` - Teste de conectividade
+- `GET /usuario?pergunta=texto` - Gera resposta usando IA
+
+## Desenvolvimento Local
+
+```bash
+# Instalar dependências
+npm install
+
+# Rodar servidor
+npm start
+```
+
+O servidor rodará na porta 3000 (ou na porta definida pela variável PORT). 
