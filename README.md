@@ -4,7 +4,7 @@ Site de quadrinhos com integração de IA usando Google Gemini.
 
 ## Estrutura do Projeto
 
-- `backend/` - API Node.js com Express
+- `backend/` - API Node.js com Express (serve também o frontend)
 - `frontend/` - Interface web estática
 
 ## Deploy no Render
@@ -15,13 +15,14 @@ Site de quadrinhos com integração de IA usando Google Gemini.
    - `GOOGLE_API_KEY`: Sua chave da API do Google Gemini
 
 2. **Build Settings**:
-   - Build Command: `npm install`
+   - Build Command: `npm run build`
    - Start Command: `npm start`
 
 ### Endpoints da API
 
-- `GET /` - Teste de conectividade
-- `GET /usuario?pergunta=texto` - Gera resposta usando IA
+- `GET /` - Página principal do site
+- `GET /api/test` - Teste de conectividade da API
+- `GET /api/usuario?pergunta=texto` - Gera resposta usando IA
 
 ## Desenvolvimento Local
 

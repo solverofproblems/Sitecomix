@@ -19,14 +19,16 @@ Adicione a seguinte variável de ambiente:
 
 O projeto está configurado com:
 - `package.json` na raiz com dependências e scripts
-- `backend/script.js` como servidor principal
+- `backend/script.js` como servidor principal (serve frontend + API)
+- `frontend/` com arquivos estáticos (HTML, CSS, JS)
 - Configuração automática da porta via variável `PORT`
 
-## Teste da API
+## Teste da Aplicação
 
 Após o deploy, você pode testar:
-- `GET /` - Teste de conectividade
-- `GET /usuario?pergunta=sua_pergunta` - Gera resposta usando IA
+- `GET /` - Página principal do site
+- `GET /api/test` - Teste de conectividade da API
+- `GET /api/usuario?pergunta=sua_pergunta` - Gera resposta usando IA
 
 ## Troubleshooting
 
