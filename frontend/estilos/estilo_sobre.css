@@ -1,0 +1,235 @@
+/* Fonte para os títulos dentro do site: */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+/* Fonte para os textos dentro do site: */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* Fonte para os textos dentro dos botões e o rodapé: */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #6d963a, #5fb65b, #31a05a);
+    width: 100%;
+    padding: 2%;
+    font-family: "Audiowide", sans-serif;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+.header h1 {
+    font-size: 30px;
+    margin-left: 2%;
+}
+
+
+.all {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-image: linear-gradient(180deg, #6d963a, #5fb65b, #31a05a);
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+}
+
+.section-explanation, .section-integration, .section-why, .section-interference, .section-objetive {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.section-explanation-content, .section-integration-content, .section-why-content, .section-interference-content, .section-objetive-content {
+    width: 80%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.252);
+    border: 2px solid rgba(34, 33, 33, 0.596);
+    border-radius: 12px;
+    text-shadow: 2px 2px 6px white, 3px 3px 5px rgb(0, 87, 58);
+}
+
+.section-integration, .section-why, .section-interference, .section-objetive {
+    padding-top:0%;
+}
+
+.section-explanation-content h2, .section-integration-content h2, .section-why-content h2, .section-interference-content h2{
+    font-family: "Audiowide", sans-serif;
+    font-size: 25px;
+    letter-spacing: 12px;
+}
+
+.section-explanation-content h3, .section-integration-content h3, .section-why-content h3, .section-interference-content h3, .section-objetive-content h3 {
+    font-family: "Audiowide", sans-serif;
+    font-size:40px;
+    margin-bottom: 2%;
+}
+
+.section-explanation-content p, .section-integration-content p, .section-why-content p, .section-interference-content p, .section-objetive-content p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-indent: 12px;
+}
+
+.section-integration-content ul, .section-why-content ul {
+    margin: 3%;
+}
+
+.section-integration-content li, .section-why-content li {
+    text-indent: 5%;
+    list-style-type: none;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 17px;
+    padding: 2%;
+}
+
+.section-explanation-content:hover, .section-integration-content:hover, .section-why-content:hover, .section-interference-content:hover, .section-objetive-content:hover {
+
+    background-color: rgba(1, 58, 144, 0.39);
+    border: 2px solid rgba(0, 59, 149, 0.829);
+    border-radius: 12px;
+    color: white;
+    text-shadow: 2px 2px 5px black, 3px 3px 6px rgba(4, 0, 128, 0.452);
+
+}
+
+.all a{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 5%;
+    color: white;
+    background-image: linear-gradient(180deg, #059b88, #004f5f);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-shadow: 2px 2px 5px white, 3px 3px 6px black;
+    border: 3px solid rgba(25, 108, 159, 0.801);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: "Share Tech Mono", monospace;
+}
+
+.all a:hover {
+    background-image: linear-gradient(360deg, #059b88, #004f5f);
+    border:none;
+    color:rgb(25, 25, 25);
+    text-shadow: 2px 2px 5px white;
+    border: 3px solid rgb(1, 56, 90);
+}
+
+
+.footer {
+    background-image: linear-gradient(180deg, #3cc475bc, rgb(65, 187, 152), #188e6d);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+    text-align: center;
+    padding: 30px;
+    font-family: "Share Tech Mono", monospace;
+    color:white;
+}
+
+.footer h2{
+    text-shadow: 2px 2px 3px rgb(0, 0, 0), 4px 4px 6px rgb(17, 55, 90);
+    padding: 10px;
+}
+
+.footer h3{
+    font-size: 12px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px black, 4px 4px 6px rgb(22, 76, 81);
+    color: rgba(255, 255, 255, 0.73);
+}
+
+@media screen and (max-width:917px) {
+    
+    .section-explanation-content h2, .section-integration-content h2, .section-why-content h2, .section-interference-content h2{
+    font-size: 17px;
+    letter-spacing: 8px;
+    }
+
+    .section-explanation-content h3, .section-integration-content h3, .section-why-content h3, .section-interference-content h3, .section-objetive-content h3 {
+        font-size:25px;
+    }
+
+    .section-explanation-content p, .section-integration-content p, .section-why-content p, .section-interference-content p, .section-objetive-content p{
+        font-size: 16px;
+        text-indent: 10px;
+    }
+
+    .section-integration-content li, .section-why-content li {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:576px){
+
+    .section-explanation-content h2, .section-integration-content h2, .section-why-content h2, .section-interference-content h2{
+    font-size: 15px;
+    letter-spacing: 6px;
+    }
+
+    .section-explanation-content h3, .section-integration-content h3, .section-why-content h3, .section-interference-content h3, .section-objetive-content h3 {
+        font-size:21px;
+    }
+
+    .section-explanation-content p, .section-integration-content p, .section-why-content p, .section-interference-content p, .section-objetive-content p{
+        font-size: 14px;
+        text-indent: 8px;
+    }
+
+    .section-integration-content li, .section-why-content li {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:486px) {
+
+    .section-explanation-content h2, .section-integration-content h2, .section-why-content h2, .section-interference-content h2{
+    font-size: 13px;
+    letter-spacing: 4px;
+    }
+
+    .section-explanation-content h3, .section-integration-content h3, .section-why-content h3, .section-interference-content h3, .section-objetive-content h3 {
+        font-size:17px;
+    }
+
+    .section-explanation-content p, .section-integration-content p, .section-why-content p, .section-interference-content p, .section-objetive-content p{
+        font-size: 12px;
+        text-indent: 6px;
+    }
+
+    .section-integration-content li, .section-why-content li {
+        font-size: 11px;
+    }
+
+}

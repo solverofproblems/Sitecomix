@@ -1,0 +1,246 @@
+/* Fonte para os títulos dentro do site: */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+/* Fonte para os textos dentro do site: */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* Fonte para os textos dentro dos botões e o rodapé: */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+/*Aqui definimos a parte superior do site mantendo somente o logo.*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #6d963a, #5fb65b, #31a05a);
+    width: 100%;
+    padding: 2%;
+    font-family: "Audiowide", sans-serif;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+.header h1 {
+    font-size: 30px;
+    margin-left: 2%;
+}
+
+
+/*Aqui estamos definindo a caixa de texto que explica o que é o COMIX e a sua imagem*/
+
+
+.section-explanation {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-image: linear-gradient(180deg, #6d963aca, #60b65bd9, #31a05ac8);
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+}
+
+.explanation-text {
+    display: flex;
+    flex-flow: column wrap;
+    flex:58%;
+    justify-content: center;
+    margin: 5%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.182);
+    border: 2px solid white;
+    border-radius: 12px;
+    text-shadow: 2px 2px 6px white, 3px 3px 5px rgb(0, 87, 58);
+}
+
+
+.explanation-text h2 {
+    letter-spacing: 12px;
+    font-size: 30px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.explanation-text h3 {
+    font-size: 45px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.explanation-text p{
+    margin-top: 5%;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.explanation-img {
+    display: flex;
+    flex:38%;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.182);
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.explanation-text:hover, .talk-comix-config:hover {
+    background-color: rgba(4, 96, 236, 0.182);
+    border: 2px solid rgba(0, 59, 149, 0.829);
+    border-radius: 12px;
+    color: white;
+    text-shadow: 2px 2px 5px black, 3px 3px 6px rgba(4, 0, 128, 0.452);
+}
+
+.explanation-img:hover {
+    background-color: rgba(4, 96, 236, 0.182);
+    border: 2px solid rgba(0, 59, 149, 0.829);
+    border-radius: 12px;
+}
+
+
+/*Aqui estamos definindo a parte em que exemplifica algumas perguntas relevantes sobre COMEX.*/
+
+
+.talk-comix {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #6d963aca, #60b65bd9, #31a05ac8);
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+
+.talk-comix-config {
+    display:flex;
+    flex-flow: column wrap;
+    padding: 2%;
+    margin-top: 5%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.talk-comix-config h3 {
+    margin-bottom: 3%;
+    font-size: 25px;
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 8px;
+}
+
+
+.talk-comix-config p{
+
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    padding: 2%;
+}
+
+.talk-comix-config li {
+    font-size: 20px;
+    font-family: "Share Tech Mono", monospace;
+    padding: 1%;
+    text-align: center;
+}
+
+.talk-comix-config {
+    background-color: rgba(255, 255, 255, 0.182);
+    border: 2px solid white;
+    border-radius: 12px;
+    text-shadow: 2px 2px 6px white, 3px 3px 5px rgb(0, 87, 58);
+}
+
+.talk-comix a{
+    display: flex;
+    flex: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 3%;
+    margin: 5%;
+    color: white;
+    background-image: linear-gradient(180deg, #059b88, #004f5f);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-shadow: 2px 2px 5px white, 3px 3px 6px black;
+    border: 3px solid rgba(25, 108, 159, 0.801);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: "Share Tech Mono", monospace;
+}
+
+.talk-comix a:hover {
+    background-image: linear-gradient(360deg, #059b88, #004f5f);
+    border:none;
+    color:rgb(25, 25, 25);
+    text-shadow: 2px 2px 5px white;
+    border: 3px solid rgb(1, 56, 90);
+}
+
+
+/*Aqui definimos o rodape (padrão em todas as abas)*/
+
+
+
+.footer {
+    background-image: linear-gradient(180deg, #3cc475bc, rgb(65, 187, 152), #188e6d);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+    text-align: center;
+    padding: 30px;
+    font-family: "Share Tech Mono", monospace;
+    color:white;
+}
+
+.footer h2{
+    text-shadow: 2px 2px 3px rgb(0, 0, 0), 4px 4px 6px rgb(17, 55, 90);
+    padding: 10px;
+}
+
+.footer h3{
+    font-size: 12px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px black, 4px 4px 6px rgb(22, 76, 81);
+    color: rgba(255, 255, 255, 0.73);
+}
+
+@media screen and (max-width:790px) {
+    .section-explanation {
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explanation-img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:735px) {
+    .talk-comix-config li {
+        list-style-type: none;
+    }
+}

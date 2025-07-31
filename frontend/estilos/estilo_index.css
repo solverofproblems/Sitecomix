@@ -1,0 +1,674 @@
+/* Aqui estão todas as fontes utilizadas no site (Fonte: Google Fonts)*/
+
+/* Fonte para os títulos dentro do site: */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+/* Fonte para os textos dentro do site: */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* Fonte para os textos dentro dos botões e o rodapé: */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+
+body {
+    background-image: linear-gradient(180deg, rgba(123, 123, 123, 0.478), rgba(111, 111, 111, 0.591), rgba(109, 109, 109, 0.526));
+}
+
+/*Essa função deixa o scroll do site mais bonito*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Aqui lidamos com a primeira parte, que é fazer o menu*/
+
+.header{
+    display:flex;
+    flex-flow: row wrap;
+    /* position: sticky;
+    top: 0; */
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(180deg, #6d963a, #5fb65b, #31a05a);
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+}
+
+.logo, .logo-comix {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 20%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.logo h1, .logo h2{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 5%;
+    /* border: 2px solid black; */
+    letter-spacing: 10px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.navbar {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    margin-right: 10%;
+    width: 60%;
+    /* border: 2px solid black; */
+    font-family: "Share Tech Mono", monospace;
+}
+
+.navbar-hidden {
+    display:none;
+}
+
+.navbar a{
+    /* border:2px solid black; */
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left:10%;
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.182);
+    border: 2px solid white;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.navbar .menu-comix {
+    border:none;
+    background-image: linear-gradient(180deg, #059b88, #004f5f);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-shadow: 2px 2px 5px white, 3px 3px 6px black;
+    border: 3px solid rgba(25, 108, 159, 0.801);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.navbar a:hover{
+    border: 3px solid #004f5f;
+    color:hsl(223, 49%, 36%);
+    font-weight: 700px;
+}
+
+.navbar .menu-comix:hover{
+    background-image: linear-gradient(360deg, #059b88, #004f5f);
+    border:none;
+    color:rgb(25, 25, 25);
+    text-shadow: 2px 2px 5px white;
+    border: 3px solid rgb(1, 56, 90);
+}
+
+
+/*Aqui começamos a lidar com o texto introdutório e a imagem principal do site*/
+
+.section {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.section-text {
+    display:flex;
+    flex-flow: row wrap;
+    flex: 60%;
+    margin-left: 5%;
+}
+
+.section-title {
+    /* border: 2px solid black; */
+    margin: 5%;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 700px;
+}
+
+.section-title h2{
+    letter-spacing: 12px;
+    font-size: 20px;
+}
+
+.section-title h3{
+    font-size: 35px;
+}
+
+
+.section-paragraph{
+    text-align: justify;
+    text-indent: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section-img {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin : 5%;
+    flex: 40%;
+}
+
+/* Aqui estamos lidando com a parte que apresenta a proposta da COMIX */
+
+.header-comix {
+    display:flex;
+    flex-flow:row wrap;
+    padding: 5%;
+    width:100%;
+    background-image: linear-gradient(180deg, #6d963a, #5fb65b, #31a05a);
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+    
+}   
+
+.comix-explanation {
+    display:flex;
+    flex-flow: column wrap;
+    flex: 60%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.182);
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.comix-explanation h2 {
+    letter-spacing: 12px;
+    font-size: 13px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.comix-explanation h3 {
+    font-size: 35px;
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 15px;
+}
+
+.comix-explanation p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-indent: 12px;
+}
+
+
+.logo-comix {
+    font-family: "Audiowide", sans-serif;
+    display:flex;
+    flex-flow: column wrap;
+    flex:35%;
+    justify-content: center;
+    align-items: center;
+    margin-left:3%;
+    background-color: rgba(255, 255, 255, 0.182);
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.logo-comix h3{
+    margin-bottom: 10px;
+    font-family: "Audiowide", sans-serif;
+    justify-content: left;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px white, 4px 4px 6px rgb(40, 113, 126);
+}
+
+.comix-explanation:hover, .logo-comix:hover{
+    background-color: #00576b6c;
+    border: 2px solid #00586b;
+    border-radius: 12px;
+    color:white;
+}
+
+.logo-comix:hover h3{
+    color:white;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0), 4px 4px 6px rgb(17, 55, 90);
+}
+
+
+/* Aqui estamos reservando o espaço que a COMIX vai se comunicar com o usuário */
+
+main {
+    display:flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    background-image: linear-gradient(190deg, #87ceb2, #049a88, #005367);
+    border-radius:15px;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+}
+
+main .logo{
+    display: flex;
+    margin:0;
+    padding:0;
+    width: 100%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.space-chatbot {
+    display:block;
+    margin: 5%;
+    padding: 0;
+    width: 90%;
+    height: 100%; 
+    background-color: rgba(255, 255, 255, 0.604);
+    border: 7px solid rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+}
+
+.containerComix {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 3%;
+}
+
+.containerUser {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 3%;
+}
+
+.space-chatbot .chatComix, .space-chatbot .chatUser{
+    width: 600px;
+    height: 100%;
+    padding: 20px 40px;
+    margin: 2%;
+    text-indent: 12px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-family: "Share Tech Mono", monospace;
+    background-color: rgba(155, 255, 248, 0.411);
+    border: 4px solid rgba(0, 0, 0, 0.832);
+    border-radius: 12px;
+    font-size: 22px;
+    color: rgb(35, 35, 35)
+}
+
+.inputUsuario {
+    display:flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: auto auto;
+    margin-bottom: 5%;
+}
+
+.inputUsuario input {
+    width: 88%;
+    padding: 3%;
+    margin-right: 2%;
+    height: 80px;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 4px solid rgba(0, 0, 0, 0.74);
+    background-image: linear-gradient(180deg, rgba(9, 219, 93, 0.864), rgb(0, 176, 85));
+    color: rgba(255, 255, 255, 0.905);
+}
+
+.inputUsuario button {
+    width:10%;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 4px solid rgba(0, 0, 0, 0.74);
+    background-image: linear-gradient(180deg, rgba(9, 219, 93, 0.864), rgb(0, 176, 85));
+    color: rgba(255, 255, 255, 0.905);
+}
+
+.inputUsuario button:hover {
+    opacity: 0.8;
+    background-image: linear-gradient(360deg, rgb(9, 219, 93), rgb(0, 176, 85));
+    cursor: pointer;
+}
+
+/*Aqui estamos trabalhando com os "cards" que explicam algumas funcionalidades do COMIX*/
+
+.section-cards{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 5%;
+}
+
+.card1 {
+    display: flex;
+    flex: 20%;
+    flex-flow: row wrap;
+    margin: 5%;
+    margin-top: 0;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.248);
+    border: 2px solid white;
+    border-radius: 12px;
+    text-shadow: 2px 2px 4px rgba(90, 90, 90, 0.385), 3px 3px 5px rgb(8, 73, 92);
+}
+
+
+.card2 {
+    display: flex;
+    flex: 20%;
+    flex-flow: row wrap;
+    padding: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.248);
+    border: 2px solid white;
+    border-radius: 12px;
+    text-shadow: 2px 2px 4px rgba(90, 90, 90, 0.385), 3px 3px 5px rgb(8, 73, 92);
+}
+
+
+.card3 {
+    display: flex;
+    flex: 20%;
+    flex-flow: row wrap;
+    margin: 5%;
+    margin-top: 0;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.248);
+    border: 2px solid white;
+    border-radius: 12px;
+    text-shadow: 2px 2px 4px rgba(90, 90, 90, 0.385), 3px 3px 5px rgb(8, 73, 92);
+}
+
+.card1 h3, .card2 h3, .card3 h3{
+    margin-bottom: 4%;
+    font-family: "Audiowide", sans-serif;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+.card1 p, .card2 p, .card3 p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    background-color: rgba(18, 167, 67, 0.372);
+    border: 2px solid rgba(11, 64, 5, 0.609);
+    border-radius: 12px;
+    color:white;
+    text-shadow: 2px 2px 4px black, 3px 3px 5px rgb(0, 45, 0)
+}
+
+
+/*Aqui nós estamos trabalhando com o rodapé*/
+
+.footer {
+    background-image: linear-gradient(180deg, #049a88, #005367);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 2px 2px 6px black, 4px 4px 8px rgb(1, 101, 106);
+    text-align: center;
+    margin-top: 10%;
+    padding: 30px;
+    font-family: "Share Tech Mono", monospace;
+    color:white;
+}
+
+.footer h2{
+    text-shadow: 2px 2px 3px rgb(0, 0, 0), 4px 4px 6px rgb(17, 55, 90);
+    padding: 10px;
+}
+
+.footer h3{
+    font-size: 12px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px black, 4px 4px 6px rgb(22, 76, 81);
+    color: rgba(255, 255, 255, 0.73);
+}
+
+.comix-icone {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background-color: rgba(73, 73, 73, 0.572);
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+
+/*Aqui tornamos o nosso site completamente responsivo!!*/
+
+
+@media screen and (max-width:1225px) {
+    .header .navbar {
+        display:none;
+    }
+
+    .header {
+        height: 100%;
+    }
+
+    .header .logo {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        margin-top: 3%;
+    }
+
+    .navbar-hidden {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .options {
+        display:none;
+    }
+
+
+    .more {
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .more a, .options a{
+        width: 100%;
+        border: 2px solid black;
+        margin-top: 5%;
+        margin: 2%;
+        padding: 10px 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .more a{
+        background-image: linear-gradient(180deg, #059b88, #004f5f);
+        text-decoration: none;
+        border-radius: 12px;
+        text-shadow: 2px 2px 5px white, 3px 3px 6px black;
+        border: 3px solid rgba(25, 108, 159, 0.801);
+        box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+
+    .options a {
+        background-color: rgba(255, 255, 255, 0.182);
+        border: 2px solid white;
+        border-radius: 12px;
+        text-shadow: 2px 2px 6px white, 3px 3px 5px rgb(0, 87, 58);
+        text-decoration: none;
+    }
+
+    .navbar-hidden:hover .options {
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-hidden:hover .more a{
+        background-image: linear-gradient(360deg, #059b88, #004f5f);
+        border:none;
+        color:rgb(25, 25, 25);
+        text-shadow: 2px 2px 5px white;
+        border: 3px solid rgb(1, 56, 90);
+    }
+
+    .options a:hover {
+        border: 3px solid #004f5f;
+        color:hsl(223, 49%, 36%);
+        font-weight: 700px;
+    }
+
+    .section-cards {
+        display:flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+    .section-cards .card2 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .card1 h3, .card2 h3, .card3 h3 {
+        font-size: 30px;
+    }
+
+    .card1 p, .card2 p, .card3 p {
+        text-indent: 12px;
+        font-size: 30px;
+    }
+} 
+
+
+@media screen and (max-width:1100px) {
+    .section {
+        display: block;
+    }
+
+    .section-text {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        width: 90%;
+    }
+    .section-title h2 {
+        font-size: 50px;
+        letter-spacing: 20px;
+    }
+    .section-title h3 {
+        font-size: 70px;
+    }
+
+    .section-paragraph {
+        font-size: 27px;
+    }
+
+    .section-img {
+        display:none;
+    }
+
+    .header-comix {
+        margin-top: 5%;
+    }
+
+    .comix-icone {
+        display: none;
+    }
+}   
+
+
+@media screen and (max-width:950px){
+    
+      .inputUsuario input {
+        flex: 78%
+      }
+
+      .inputUsuario button {
+        flex: 20%;
+      }
+}
+
+@media screen and (max-width:880px) {
+      .header-comix {
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+      } 
+
+      .comix-explanation {
+        margin:0;
+        width: 90%;
+      }
+
+      .logo-comix {
+        margin:0;
+        margin-top: 5%;
+        width: 90%;
+      }
+
+      .comix-explanation h2 {
+        text-align: center;
+        font-size: 25px;
+      }
+
+      .comix-explanation h3 {
+        text-align: center;
+        font-size: 40px;
+      }
+
+      .comix-explanation p {
+        font-size: 30px;
+      }
+
+      .logo-comix h3 {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .logo-comix img {
+        width:190px;
+      }
+
+      .logo-comix h2 {
+        font-size: 35px;
+      }
+}

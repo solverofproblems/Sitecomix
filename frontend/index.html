@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FECART - Comix</title>
+    <meta name="description" content="Site com chatbot programado pelos alunos de IA para a FECART de Comex, o nome desse chatbot é Comix.">
+    <meta name="author" content="Carlos Eduardo de Lima">
+    <link rel="stylesheet" href="estilos/estilo_index.css">
+
+</head>
+
+<body>
+    
+    <header class="header">
+
+        <div class="logo">
+            <img src="imagens/comix.png">
+            <h1>COMIX</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="ajuda.html">Ajuda</a>
+            <a href="sobre.html">Sobre</a>
+            <a class="menu-comix" href="#direcionar_comix">Iniciar conversa</a>
+        </nav>
+
+
+        <nav class="navbar-hidden">
+
+            <div class="more">
+                <a href="#">Saiba mais</a>
+            </div>
+
+            <div class="options">
+                <a href="ajuda.html">Ajuda</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="#direcionar_comix">Iniciar conversa</a>
+            </div>
+
+
+        </nav>
+
+
+    </header>
+
+
+
+    <section class="section">
+
+        <div class="section-text">
+
+            <div class="section-title">
+                <h2>Entenda</h2>
+                <h3>O que é COMEX:<h3>
+            </div>
+
+
+            <div class="section-paragraph">
+
+                <p>
+                    Comércio Exterior é a troca de bens, serviços e capitais entre países, envolvendo operações de importação e exportação. Essa prática fortalece a economia, amplia o acesso a produtos e tecnologias e estimula a competitividade entre as empresas no mercado global.
+                </p>
+
+                <p>
+                    A Inteligência Artificial está diretamente integrada ao Comércio Exterior, otimizando processos como a análise de dados comerciais, o rastreamento de mercadorias, a tradução de documentos técnicos e a previsão de demanda. Ela garante mais precisão nas decisões, agilidade nas transações e redução de custos operacionais, tornando o setor mais eficiente e competitivo.
+                </p>
+
+                <p>
+                    Além disso, o Comércio Exterior exige conhecimento técnico e domínio de normas, documentos e acordos internacionais. Profissionais da área atuam na negociação com fornecedores e compradores estrangeiros, no controle logístico e na adequação às exigências legais de cada país, garantindo o bom andamento das operações comerciais entre nações.
+                </p>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="section-img">
+            <img src="imagens/body-img-modificado.png" style="width:500px">
+        </div>
+    
+
+    </section>
+
+
+    <header class="header-comix">
+
+
+        <div class="comix-explanation">
+
+            <h2>Entendendo a fundo as</h2>
+            <h3>Dúvidas sobre COMEX</h3>
+
+            <p>
+                Comércio Exterior é uma área ampla, com muitos termos, leis e regras específicas. Por isso, criamos a COMIX: para tornar tudo isso mais simples e acessível!
+            </p>
+            <p>
+                A COMIX é uma assistente virtual feita para te explicar tudo sobre Comércio Exterior de forma simples, direta e sem complicações.
+            </p>
+
+        </div>
+
+    
+        <div class="logo-comix">
+
+            <h3>Diga "olá" para...</h3>
+            <img src="imagens/comix.png">
+            <h2>COMIX!</h2>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <div class="logo">
+            <img src="imagens/comix.png">
+            <h1>COMIX</h1>
+        </div>
+        
+        <div class="space-chatbot" id="direcionar_comix">
+
+            <div class="containerUser" id="askUser">
+                <div class="chatUser">
+                    <p>
+                        COMIX, me explique o que é Comércio Exterior.
+                    </p>
+                </div>
+                <img src="imagens/icone_usuario.png">
+            </div>
+
+
+            <div class="containerComix" id="responseComix">
+                <img src="imagens/comix.png">
+                <div class="chatComix">
+                    <p>
+                        Comércio exterior é a troca de bens e serviços entre países. Ele envolve importações e exportações e é fundamental para o crescimento econômico, pois amplia mercados, gera empregos e fortalece as relações comerciais entre as nações.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="inputUsuario">
+            <input id='input_user' type="text" placeholder="Digite sua dúvida..."></input>
+            <button id="btn_send" onclick="perguntaUsuario()">Enviar</button>
+        </div>
+
+        <section class="section-cards">
+
+            <div class="card1">
+
+                <h3>Especializações:</h3>
+
+                <p>
+                    O COMIX é um chatbot com inteligência artificial criado para explicar, de forma clara e autônoma, conceitos e termos do Comércio Exterior, ajudando quem estuda ou atua na área.
+                </p>
+
+            </div>
+                
+            <div class="card2">
+
+                <h3>Funcionalidades:</h3>
+
+                <p>
+                    O COMIX usa inteligência artificial para explicar termos, leis e processos do Comércio Exterior de forma rápida e personalizada — ideal para estudantes, profissionais e interessados no tema.
+                </p>
+
+            </div>
+
+            <div class="card3">
+
+                <h3>Objetivo:</h3>
+
+                <p>
+                    O COMIX foi criado para tornar o Comércio Exterior mais fácil de entender, tornando o conhecimento acessível e prático.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+
+        <h2>FECART – Feira de Ciências, Arte e Tecnologia da FECAP</h2>
+        <h3>Este projeto faz parte da iniciativa educacional interdisciplinar da instituição<h3>
+        <h3> © Todos os direitos reservados.<h3>
+
+    </footer>
+
+    <a class="comix-icone" href="#direcionar_comix"><img src="imagens/comix.png"></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"> </script>
+
+</body>
+</html>
