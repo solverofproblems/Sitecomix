@@ -5,8 +5,8 @@
   "main": "backend/script.js",
   "type": "module",
   "scripts": {
-    "start": "node backend/script.js",
-    "build": "cd backend && npm install"
+    "start": "node ./backend/script.js",
+    "build": "npm install"
   },
   "keywords": ["quadrinhos", "ia", "nodejs"],
   "author": "",
